@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MediaUserComponent } from './media-user.component';
+import { HeaderUserComponent } from './header-user.component';
 
-describe('MediaUserComponent', () => {
-  let component: MediaUserComponent;
-  let fixture: ComponentFixture<MediaUserComponent>;
+describe('HeaderUserComponent', () => {
+  let component: HeaderUserComponent;
+  let fixture: ComponentFixture<HeaderUserComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MediaUserComponent]
+      imports: [HeaderUserComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MediaUserComponent);
+    fixture = TestBed.createComponent(HeaderUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
