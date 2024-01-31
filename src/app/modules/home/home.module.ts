@@ -5,7 +5,6 @@ import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   declarations: [],
-  //copiar = trae // export = doy
   imports: [
     CommonModule,
     HomeRoutingModule
