@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepagesComponent } from './pages/homepages/homepages.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component:HomepagesComponent
+    path:'tracks',
+    loadChildren: () => import('@modules/tracks/tracks.module').then(m => m.TracksModule)
+  },
+  {
+    path:'favorite',
+    loadChildren: () => import('@modules/favorite/favorite.module').then(m => m.FavoriteModule)
+  },
+  {
+    path:'history',
+    loadChildren: () => import('@modules/history/history.module').then(m => m.HistoryModule)
   }
 ];
 
