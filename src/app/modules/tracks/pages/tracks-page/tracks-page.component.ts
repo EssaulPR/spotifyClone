@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.model';
+import * as Data from '@data/tracks.json'
 
 @Component({
   selector: 'app-tracks-page',
@@ -14,15 +16,9 @@ export class TracksPageComponent {
       small:'small'
     }
   ]
-  mockDataTrackList:Array<any> = [
-    {
-      name: 'BadBunny1'
-    },
-    {
-      name: 'BadBunny2'
-    },
-    {
-      name: 'BadBunny3'
-    }
-  ]
+  mockDataTrackList:Array<TrackModel> =[]
+  ngOnInit(): void {
+    const {data}:any = (Data as any).default
+    this.mockDataTrackList = data
+  }
 }
