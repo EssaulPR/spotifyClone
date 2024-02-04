@@ -10,9 +10,9 @@ import * as Data from '@data/tracks.json'
 export class TracksPageComponent {
   options:Array<any> = [
     {
-      titulo1 : 'Lo mejor de la musica',
+      titulo1 : 'Lo ultimo esuchcado',
       big:'big',
-      titulo2 : 'Lo mejor de la musica',
+      titulo2 : 'Lo que te gusta',
       small:'small'
     }
   ]
