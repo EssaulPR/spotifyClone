@@ -13,6 +13,9 @@
       ],
       "@modules/*":[
         "src/app/modules/*"
+      ],
+      "@data/*":[
+        "src/app/data/*"
       ]
     },
     "outDir": "./dist/out-tsc",

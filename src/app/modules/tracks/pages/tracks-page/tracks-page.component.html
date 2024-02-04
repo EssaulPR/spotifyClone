@@ -1,1 +1,6 @@
-<p>tracks-page works!</p>
+<div class="tracks-page" *ngFor="let item of options">
+  <!-- seccion top -->
+  <app-section-generic [dataTracks] = "mockDataTrackList" [title]="item.titulo1" [mode]="item.small"></app-section-generic>
+  <!-- seccion bottom -->
+  <app-section-generic [dataTracks] = "mockDataTrackList" [title]="item.titulo2" [mode]="item.big"></app-section-generic>
+</div>

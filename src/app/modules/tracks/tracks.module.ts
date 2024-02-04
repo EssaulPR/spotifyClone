@@ -11,7 +11,8 @@ import { SharedModule } from '@shared/shared.module';
   ],
   imports: [
     CommonModule,
-    TracksRoutingModule
+    TracksRoutingModule,
+    SharedModule
   ]
 })
 export class TracksModule { }
