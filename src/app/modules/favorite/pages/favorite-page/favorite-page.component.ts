@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './favorite-page.component.css'
 })
 export class FavoritePageComponent {
-
+  options:Array<any> =[
+    {
+      listaReproduccion: 'Lista de reproducciones',
+      primerTitulo: 'Canciones que te gustan',
+      subTitulo: 'Essaul'
+    }
+  ]
 }
