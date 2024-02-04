@@ -1,13 +1,13 @@
 {
     "data": [{
             "_id": 1,
-            "name": "Getting Over",
-            "album": "One Love",
-            "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+            "name": "Bad Bunny",
+            "album": "This's Bad Bunny",
+            "cover": "https://i.scdn.co/image/ab67706f000000029c0eb2fdff534f803ea018e1",
             "artist": {
-                "name": "David Guetta",
-                "nickname": "David Guetta",
-                "nationality": "FR"
+                "name": "Benito",
+                "nickname": "Bad Bonny",
+                "nationality": "PR"
             },
             "duration": {
                 "start": 0,
