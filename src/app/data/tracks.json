@@ -3,7 +3,7 @@
             "_id": 1,
             "name": "Bad Bunny",
             "album": "This's Bad Bunny",
-            "cover": "https://i.scdn.co/image/ab67706f000000029c0eb2fdff534f803ea018e1",
+            "cover": "_https://i.scdn.co/image/ab67706f000000029c0eb2fdff534f803ea018e1",
             "artist": {
                 "name": "Benito",
                 "nickname": "Bad Bonny",

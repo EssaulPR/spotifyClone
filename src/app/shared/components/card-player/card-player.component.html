@@ -17,7 +17,7 @@
 <!-- Diseño del mode (big)-->
 <div *ngIf="mode==='big'" class="card-player player-big">
 
-  <img [src]="track.cover" alt="" class="cover">
+  <img appImgBroken [customImg]="'https://w7.pngwing.com/pngs/1014/365/png-transparent-angular-js-full-logo-tech-companies-thumbnail.png'" [src]="track.cover" alt="" class="cover">
 
   <div class="content-player">
       <div class="title-track">{{track.name}}</div>
