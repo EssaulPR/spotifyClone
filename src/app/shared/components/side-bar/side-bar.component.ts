@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -29,6 +30,9 @@ export class SideBarComponent implements OnInit{
     accessLink: [],
     customOptions: []
   };
+  constructor(private router:Router) {
+
+  }
   //Ciclo for con 8 vidas o algo asi...
   ngOnInit(): void {
     //Llamamos a nuestro Json, entrando a sus variables para introducirles sus datos
@@ -36,7 +40,7 @@ export class SideBarComponent implements OnInit{
       {
         name: "Home",
         icon: "uil-estate",
-        router: ['/']
+        router: ['/tracks']
       },
       {
         name: "Search",
@@ -52,17 +56,20 @@ export class SideBarComponent implements OnInit{
     this.mainMenu.accessLink = [
       {
         name: 'Crear lista',
-        icon: 'uil-plus-square'
+        icon: 'uil-plus-square',
+        router: ['/']
       },
       {
         name: 'Canciones que te gustan',
-        icon: 'uil-heart-medical'
+        icon: 'uil-heart-medical',
+        router: ['/favorite']
       }
     ]
     this.mainMenu.customOptions = [
       {
         name: 'Mi lista º1',
-        router: ['/']
+        router: ['/'],
+        query: {hola:'mundo'}
       },
       {
         name: 'Mi lista º2',
@@ -77,5 +84,16 @@ export class SideBarComponent implements OnInit{
         router: ['/']
       }
     ]
+  }
+  //para esto es cuando sabemos bien a donde mandar al usuario
+  goTo($event: any): void {
+    this.router.navigate(['/','favorite'],{
+      queryParams:{
+        key1:'value1',
+        key2:'value2',
+        key3:'value3'
+
+      }
+    })
   }
 }
