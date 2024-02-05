@@ -7,9 +7,25 @@ import * as Data from '@data/tracks.json'
   styleUrl: './play-list-body.component.css'
 })
 export class PlayListBodyComponent {
-tracks:TrackModel[] = []
-ngOnInit(): void {
-  const {data}:any = (Data as any).default
-  this.tracks = data;
-}
+  tracks:TrackModel[] = []
+  optionsSort: {
+    property:string | null,
+    order:string
+  } = {
+      property:null,
+      order:'asc'
+    }
+
+  ngOnInit(): void {
+    const {data}:any = (Data as any).default
+    this.tracks = data;
+  }
+
+  changeSort(property: string): void {
+    const { order } = this.optionsSort
+    this.optionsSort = {
+      property:property,
+      order: order === 'asc' ? 'desc' : 'asc'
+    }
+  }
 }

@@ -69,19 +69,22 @@ export class SideBarComponent implements OnInit{
       {
         name: 'Mi lista º1',
         router: ['/'],
-        query: {hola:'mundo'}
+        query: {hola:'mundo1'}
       },
       {
         name: 'Mi lista º2',
-        router: ['/']
+        router: ['/'],
+        query: {hola:'mundo2'}
       },
       {
         name: 'Mi lista º3',
-        router: ['/']
+        router: ['/'],
+        query: {hola:'mundo3'}
       },
       {
         name: 'Mi lista º4',
-        router: ['/']
+        router: ['/'],
+        query: {hola:'mundo4'}
       }
     ]
   }
