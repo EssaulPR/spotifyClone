@@ -40,57 +40,57 @@ export class SideBarComponent implements OnInit{
       {
         name: "Home",
         icon: "uil-estate",
-        router: ['/tracks']
+        router: ['tracks']
       },
       {
         name: "Search",
         icon: "uil-search",
-        router: ['/']
+        router: ['/home']
       },
       {
         name: "Your Library",
         icon: "uil-chart",
-        router: ['/']
+        router: ['/home']
       }
     ]
     this.mainMenu.accessLink = [
       {
         name: 'Crear lista',
         icon: 'uil-plus-square',
-        router: ['/']
+        router: ['']
       },
       {
         name: 'Canciones que te gustan',
         icon: 'uil-heart-medical',
-        router: ['/favorite']
+        router: ['']
       }
     ]
     this.mainMenu.customOptions = [
       {
         name: 'Mi lista º1',
-        router: ['/'],
+        router: [''],
         query: {hola:'mundo1'}
       },
       {
         name: 'Mi lista º2',
-        router: ['/'],
+        router: [''],
         query: {hola:'mundo2'}
       },
       {
         name: 'Mi lista º3',
-        router: ['/'],
+        router: [''],
         query: {hola:'mundo3'}
       },
       {
         name: 'Mi lista º4',
-        router: ['/'],
+        router: [''],
         query: {hola:'mundo4'}
       }
     ]
   }
   //para esto es cuando sabemos bien a donde mandar al usuario
   goTo($event: any): void {
-    this.router.navigate(['/','favorite'],{
+    this.router.navigate(['home','favorite'],{
       queryParams:{
         key1:'value1',
         key2:'value2',
