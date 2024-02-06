@@ -13,6 +13,6 @@ export const routes: Routes = [
     },
     {
       path: '**',
-      redirectTo: 'auth'
+      redirectTo: 'auth/login'
     }
 ];
